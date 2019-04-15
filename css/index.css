@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+    padding: 12px 0;
+    background-color: mediumturquoise;
+}
+
+li {
+    display: inline;
+    font-family: fantasy;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+}
+
+li a:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+li a.active {
+    background-color: goldenrod;
+    color: white;
+}
