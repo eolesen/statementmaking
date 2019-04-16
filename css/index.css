@@ -16,6 +16,11 @@ header #sign {
     height: auto;
     width: 150px;
 }
+
+#logo {
+    height: 70px;
+}
+
 ul {
     list-style-type: none;
     padding: 12px 0;
