@@ -64,6 +64,10 @@ footer {
 
 /* css for gallery slideshow*/
 
+.gallerySection{
+    background-color: beige;
+    margin: 20px;
+}
 
 #content {
     padding: 25px;
@@ -85,6 +89,11 @@ footer {
 
 .mySlides {
     display: none;
+
+}
+
+.mySlides img {
+    width: 300px;
 }
 
 /* Next & previous buttons */
