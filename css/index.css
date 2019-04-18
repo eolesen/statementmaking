@@ -1,3 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    /*-ms-transition: all .5s ease; */
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+/*Background color for the whole page*/
+body {
+    background-color: #55c1ef;
+    font-family: Georgia, serif;
+}
+
+/*Makes equivalent margin for all page contents*/
+header, #wrapper, footer {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#wrapper{
+    background-color: #f2c72f;
+}
+
+footer {
+    background-color: #f05b87;
+    height: 150px;
+    text-align: center;
+}
+
+#footer{
+    padding: 30px;
+}
+
+
 .head {
     font-family: cursive;
 }
@@ -49,23 +86,11 @@ li a.active {
     color: white;
 }
 
-footer {
-    background-color: #f05b87;
-    height: 150px;
-    text-align: center;
-}
-
-#footer{
-    padding: 30px;
-}
-
-
-
 
 /* css for gallery slideshow*/
 
 .gallerySection{
-    background-color: beige;
+    background-color: #d2e4f5;
     margin: 20px;
 }
 
