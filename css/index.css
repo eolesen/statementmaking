@@ -24,11 +24,6 @@ header, #wrapper, footer {
     background-color: #f68b1f;
 }
 
-#statement{
-    position: relative;
-    float: right;
-}
-
 footer {
     background-color: #f05b87;
     height: 150px;
