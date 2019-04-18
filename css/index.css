@@ -29,7 +29,13 @@ footer {
     height: 150px;
     text-align: center;
 }
+#upperpic{
+    height: 500;
+}
 
+#lowerpic{
+    height: 500;
+}
 #footer{
     padding: 30px;
 }
@@ -85,6 +91,7 @@ li a.active {
     background-color: #ed572d;
     color: white;
 }
+
 
 
 /* css for gallery slideshow*/
