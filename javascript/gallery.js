@@ -23,7 +23,6 @@ function showSlides(n) {
 
     $(slides[slideIndex-1]).css("display", "block");
     console.log(slideIndex);
-   // Cookie.set("holdSpot" , slideIndex);
 }
 
 
@@ -39,7 +38,7 @@ function activeThumbnail(n) {
         $(allThumbnails[i]).css("border", "none");
     }
 
-    $(allThumbnails[thumbnailIndex-1]).css("border", "solid orangered 3px");
+    $(allThumbnails[thumbnailIndex-1]).css("border", "solid #ed572d 3px");
 
 }
 
@@ -53,8 +52,6 @@ function onLoad() {
         $(this).removeClass("mouse");
     });
 
-   // var num = Cookie.get("holdSpot");
-    console.log(num);
     slideIndex = num;
 
     showSlides(slideIndex);
