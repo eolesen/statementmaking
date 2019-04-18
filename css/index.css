@@ -31,20 +31,14 @@ footer {
 }
 #upperpic{
     position: relative;
-    alignment: left;
-}
-
-#upperpic img{
-    height: 50px;
+    /*align: left;*/
+    width: 30%;
 }
 
 #lowerpic{
     position: relative;
-    alignment: right;
-}
-
-#lowerpic img {
-    height: 200px;
+    float: right;
+    width: 30%;
 }
 
 #footer{
