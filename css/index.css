@@ -16,12 +16,22 @@ body {
 }
 
 /*Makes equivalent margin for all page contents*/
-header, #wrapper, footer {
+header, #wrapper, footer, #wrapper2 {
     margin-left: 10%;
     margin-right: 10%;
 }
 #wrapper{
     background-color: #f68b1f;
+}
+
+#wrapper2{
+    position: relative;
+    background-color: #FDECF3;
+
+}
+
+#logopiece{
+    height: 100px;
 }
 
 footer {
