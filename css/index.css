@@ -30,12 +30,23 @@ footer {
     text-align: center;
 }
 #upperpic{
-    height: 500px;
+    position: relative;
+    alignment: left;
+}
+
+#upperpic img{
+    height: 50px;
 }
 
 #lowerpic{
-    height: 500px;
+    position: relative;
+    alignment: right;
 }
+
+#lowerpic img {
+    height: 200px;
+}
+
 #footer{
     padding: 30px;
 }
