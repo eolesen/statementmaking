@@ -45,6 +45,10 @@ footer {
     padding: 30px;
 }
 
+#statement{
+    position: relative;
+    float: right;
+}
 
 .head {
     font-family: cursive;
