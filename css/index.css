@@ -48,3 +48,89 @@ li a.active {
     background-color: #ed572d;
     color: white;
 }
+
+footer {
+    background-color: #f05b87;
+    height: 150px;
+    text-align: center;
+}
+
+#footer{
+    padding: 30px;
+}
+
+
+
+
+/* css for gallery slideshow*/
+
+
+#content {
+    padding: 25px;
+    text-align :center;
+}
+
+
+.thumbnail {
+    width: 15%;
+    padding: 1%;
+    box-sizing: border-box;}
+
+/* Slideshow container */
+.slideshow-container {
+    /*max-width: 1000px;*/
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 5%;
+}
+.prev {
+    left: 5%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: orangered;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: black;
+    font-size: 1em;
+    padding: 8px 12px;
+    position: absolute;
+    left:15%;
+    top: 0;
+}
+
+.mouse {
+    height: 20%;
+    width: 20%;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    /*-ms-transition: all 1s ease;*/
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
