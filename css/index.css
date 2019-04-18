@@ -1,7 +1,30 @@
+.head {
+    font-family: cursive;
+}
+
+.head a {
+    text-decoration: none;
+    color: black;
+}
+
+header div {
+    column-count: 2;
+    padding: 5px;
+}
+header #sign {
+    float: right;
+    height: auto;
+    width: 150px;
+}
+
+#logo {
+    height: 70px;
+}
+
 ul {
     list-style-type: none;
     padding: 12px 0;
-    background-color: mediumturquoise;
+    background-color: #f05b87;
 }
 
 li {
@@ -17,11 +40,11 @@ li a {
 }
 
 li a:hover {
-    background-color: goldenrod;
+    background-color: #ed572d;
     color: white;
 }
 
 li a.active {
-    background-color: goldenrod;
+    background-color: #ed572d;
     color: white;
 }
