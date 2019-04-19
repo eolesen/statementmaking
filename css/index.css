@@ -22,12 +22,13 @@ header, #wrapper, footer, #wrapper2 {
 }
 #wrapper{
     background-color: #f68b1f;
+    text-align: center;
 }
 
 #wrapper2{
     position: relative;
     background-color: #FDECF3;
-
+    text-align: center;
 }
 
 #logopiece{
