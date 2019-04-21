@@ -61,32 +61,26 @@ footer {
     float: right;
 }
 
-.head {
+h1{
     font-family: cursive;
+    ;
+}
+h1 img{
+    float: left;
+    width: 20%
+
 }
 
-.head a {
+#indexdiv{
+    height: 125px;
+}
+
+h1 a {
     text-decoration: none;
     color: black;
 }
 #nav{
     background-color: #f05b87;
-}
-
-/*
-header div {
-    column-count: 2;
-    padding: 5px;
-}
-*/
-header #sign {
-    float: right;
-    height: auto;
-    width: 150px;
-}
-
-#logo {
-    height: 70px;
 }
 
 #nav ul {
