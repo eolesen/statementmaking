@@ -16,11 +16,11 @@ body {
 }
 
 /*Makes equivalent margin for all page contents*/
-header, #wrapper, footer, #wrapper2 {
+header, #wrapper, footer, #wrapper2, #indexWrapper {
     margin-left: 10%;
     margin-right: 10%;
 }
-#wrapper{
+#wrapper, #indexWrapper{
     background-color: #f68b1f;
     text-align: center;
 }
@@ -40,16 +40,20 @@ footer {
     height: 150px;
     text-align: center;
 }
+
+#indexWrapper{
+    height: 40vh;
+}
 #upperpic{
     position: relative;
     float: left;
-    width: 35%;
+    width: 40vh;
 }
 
 #lowerpic{
     position: relative;
-    /*float: right;*/
-    width: 35%;
+    float: right;
+    height: 40vh;
 }
 
 #footer{
