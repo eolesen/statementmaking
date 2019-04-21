@@ -225,17 +225,12 @@ header #sign {
 }
 
 .who_are_we {
-    margin-left: auto;
-    margin-right: auto;
     height: 400px;
-    margin-right: 0;
-    position: relative;
-    width: 40%;
-    z-index: 1;
-
+    vertical-align: center;
 }
 
-#who_pic {
+.who_are_we img {
+    margin: 5px;
     float: left;
-    width: 30%;
+    width:40%;
 }
