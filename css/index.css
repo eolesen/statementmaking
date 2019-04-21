@@ -200,3 +200,33 @@ header #sign {
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
+
+/* CSS for About Us */
+.intro {
+   position: relative;
+}
+
+.About_us_heading {
+    text-align: center;
+    font-size: 100px;
+}
+
+#intro {
+    text-align: center;
+}
+
+.statement_paragraph {
+    position: relative;
+}
+
+.statement_paragraph, p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#who-pic {
+    position: relative;
+    float: right;
+    width: 10%;
+    height: 10%;
+}
