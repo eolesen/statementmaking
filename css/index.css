@@ -42,14 +42,14 @@ footer {
 }
 #upperpic{
     position: relative;
-    /*align: left;*/
-    width: 30%;
+    float: left;
+    width: 35%;
 }
 
 #lowerpic{
     position: relative;
-    float: right;
-    width: 30%;
+    /*float: right;*/
+    width: 35%;
 }
 
 #footer{
@@ -67,7 +67,7 @@ h1{
 }
 h1 img{
     float: left;
-    width: 20%
+    height: 125px;
 
 }
 
