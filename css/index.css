@@ -224,7 +224,7 @@ header #sign {
     line-height: 30px;
 }
 
-#who-pic {
+.who-pic {
     position: relative;
     float: right;
     width: 10%;
