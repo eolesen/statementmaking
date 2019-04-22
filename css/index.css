@@ -16,13 +16,20 @@ body {
 }
 
 /*Makes equivalent margin for all page contents*/
-header, #wrapper, footer, #wrapper2, #indexWrapper {
+header, #wrapper, footer, #wrapper2 {
     margin-left: 10%;
     margin-right: 10%;
 }
-#wrapper, #indexWrapper{
+
+#indexdiv {
+    display: flex;
+    align-items: center;
+}
+
+#wrapper{
     background-color: #f68b1f;
     text-align: center;
+    margin: 0;
 }
 
 #wrapper2{
@@ -40,20 +47,16 @@ footer {
     height: 150px;
     text-align: center;
 }
-
-#indexWrapper{
-    height: 40vh;
-}
 #upperpic{
     position: relative;
-    float: left;
-    width: 40vh;
+    /*align: left;*/
+    width: 30%;
 }
 
 #lowerpic{
     position: relative;
     float: right;
-    height: 40vh;
+    width: 30%;
 }
 
 #footer{
@@ -65,26 +68,32 @@ footer {
     float: right;
 }
 
-h1{
+.head {
     font-family: cursive;
-    ;
-}
-h1 img{
-    float: left;
-    height: 125px;
-
 }
 
-#indexdiv{
-    height: 125px;
-}
-
-h1 a {
+.head a {
     text-decoration: none;
     color: black;
 }
 #nav{
     background-color: #f05b87;
+}
+
+/*
+header div {
+    column-count: 2;
+    padding: 5px;
+}
+*/
+header #sign {
+    float: right;
+    height: auto;
+    width: 150px;
+}
+
+#logo {
+    height: 70px;
 }
 
 #nav ul {
@@ -223,12 +232,17 @@ h1 a {
 }
 
 .who_are_we {
+    margin-left: auto;
+    margin-right: auto;
     height: 400px;
-    vertical-align: center;
+    margin-right: 0;
+    position: relative;
+    width: 40%;
+    z-index: 1;
+
 }
 
-.who_are_we img {
-    margin: 5px;
+#who_pic {
     float: left;
-    width:40%;
+    width: 30%;
 }
