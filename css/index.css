@@ -21,6 +21,7 @@ header, #wrapper, footer, #wrapper2, #indexWrapper {
     margin-right: 10%;
 }
 #wrapper, #indexWrapper{
+    /*#FDECF3or #f68b1f*/
     background-color: #f68b1f;
     text-align: center;
 }
@@ -215,6 +216,7 @@ h1 a {
 
 .statement_paragraph {
     position: relative;
+    font-family: "../resources/SM_Fonts/Nexa_Bold.otf";
 }
 
 .statement_paragraph, p {
@@ -230,5 +232,31 @@ h1 a {
 .who_are_we img {
     margin: 5px;
     float: left;
-    width:40%;
+    width:30%;
+}
+
+.stand_up {
+    height: 400px;
+    vertical-align: center;
+}
+
+.stand_up img {
+    margin: 10px;
+    margin-bottom: 200px;
+    float: right;
+    width:35%;
+    height: 30%;
+}
+
+.tech {
+    height: 400px;
+    vertical-align: center;
+}
+
+.tech img {
+    margin: 10px;
+    margin-bottom: 40px;
+    float: left;
+    width:35%;
+    height: 50%;
 }
