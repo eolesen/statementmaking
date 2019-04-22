@@ -16,20 +16,14 @@ body {
 }
 
 /*Makes equivalent margin for all page contents*/
-header, #wrapper, footer, #wrapper2 {
+header, #wrapper, footer, #wrapper2, #indexWrapper {
     margin-left: 10%;
     margin-right: 10%;
 }
-
-#indexdiv {
-    display: flex;
-    align-items: center;
-}
-
-#wrapper{
+#wrapper, #indexWrapper{
+    /*#FDECF3or #f68b1f*/
     background-color: #f68b1f;
     text-align: center;
-    margin: 0;
 }
 
 #wrapper2{
@@ -47,16 +41,20 @@ footer {
     height: 150px;
     text-align: center;
 }
+
+#indexWrapper{
+    height: 40vh;
+}
 #upperpic{
     position: relative;
-    /*align: left;*/
-    width: 30%;
+    float: left;
+    width: 40vh;
 }
 
 #lowerpic{
     position: relative;
     float: right;
-    width: 30%;
+    height: 40vh;
 }
 
 #footer{
@@ -68,32 +66,26 @@ footer {
     float: right;
 }
 
-.head {
+h1{
     font-family: cursive;
+    ;
+}
+h1 img{
+    float: left;
+    height: 125px;
+
 }
 
-.head a {
+#indexdiv{
+    height: 125px;
+}
+
+h1 a {
     text-decoration: none;
     color: black;
 }
 #nav{
     background-color: #f05b87;
-}
-
-/*
-header div {
-    column-count: 2;
-    padding: 5px;
-}
-*/
-header #sign {
-    float: right;
-    height: auto;
-    width: 150px;
-}
-
-#logo {
-    height: 70px;
 }
 
 #nav ul {
@@ -224,6 +216,7 @@ header #sign {
 
 .statement_paragraph {
     position: relative;
+    font-family: "../resources/SM_Fonts/Nexa_Bold.otf";
 }
 
 .statement_paragraph, p {
@@ -232,17 +225,38 @@ header #sign {
 }
 
 .who_are_we {
-    margin-left: auto;
-    margin-right: auto;
     height: 400px;
-    margin-right: 0;
-    position: relative;
-    width: 40%;
-    z-index: 1;
-
+    vertical-align: center;
 }
 
-#who_pic {
+.who_are_we img {
+    margin: 5px;
     float: left;
-    width: 30%;
+    width:30%;
+}
+
+.stand_up {
+    height: 400px;
+    vertical-align: center;
+}
+
+.stand_up img {
+    margin: 10px;
+    margin-bottom: 200px;
+    float: right;
+    width:35%;
+    height: 30%;
+}
+
+.tech {
+    height: 400px;
+    vertical-align: center;
+}
+
+.tech img {
+    margin: 10px;
+    margin-bottom: 40px;
+    float: left;
+    width:35%;
+    height: 50%;
 }
