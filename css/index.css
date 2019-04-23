@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -43,12 +43,17 @@ footer {
 }
 
 #indexWrapper{
-    height: 90vh;
+    height: 110vh;
 }
 #upperpic{
     position: relative;
     float: left;
     width: 40vh;
+}
+
+#title {
+    /*margin-top: */
+
 }
 
 #lowerpic{
