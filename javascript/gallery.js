@@ -1,5 +1,7 @@
 
 var slideIndex = 1;
+var slideIndex2 = 1;
+var slideIndex3 = 1;
 
 
 function plusSlides(n) {
@@ -12,22 +14,22 @@ function currentSlide(n) {
 }
 
 function plusSlides2(n) {
-    showSlides(slideIndex += n);
-    activeThumbnail(thumbnailIndex +=n);
+    showSlides2(slideIndex2 += n);
+    activeThumbnail2(thumbnailIndex2 +=n);
 }
 function currentSlide2(n) {
-    showSlides(slideIndex = n);
-    activeThumbnail(thumbnailIndex = n)
+    showSlides2(slideIndex2 = n);
+    activeThumbnail2(thumbnailIndex2 = n)
 }
 
 function plusSlides3(n) {
-    showSlides(slideIndex += n);
-    activeThumbnail(thumbnailIndex +=n);
+    showSlides3(slideIndex3 += n);
+    activeThumbnail3(thumbnailIndex3 +=n);
 }
 
 function currentSlide3(n) {
-    showSlides(slideIndex = n);
-    activeThumbnail(thumbnailIndex = n)
+    showSlides3(slideIndex3 = n);
+    activeThumbnail3(thumbnailIndex3 = n)
 }
 
 
@@ -73,7 +75,11 @@ function showSlides3(n) {
 
 
 var thumbnailIndex = 1;
+var thumbnailIndex2 = 1;
+var thumbnailIndex3 = 1;
 activeThumbnail(thumbnailIndex);
+activeThumbnail2(thumbnailIndex2);
+activeThumbnail3(thumbnailIndex3);
 
 function activeThumbnail(n) {
     var i;
@@ -91,26 +97,26 @@ function activeThumbnail(n) {
 function activeThumbnail2(n) {
     var i;
     var allThumbnails = document.getElementsByClassName("thumbnail2");
-    if (n > allThumbnails.length) {thumbnailIndex = 1}
-    if (n < 1) {thumbnailIndex = allThumbnails.length}
+    if (n > allThumbnails.length) {thumbnailIndex2 = 1}
+    if (n < 1) {thumbnailIndex2 = allThumbnails.length}
     for (i = 0; i < allThumbnails.length; i++) {
         $(allThumbnails[i]).css("border", "none");
     }
 
-    $(allThumbnails[thumbnailIndex-1]).css("border", "solid #ed572d 3px");
+    $(allThumbnails[thumbnailIndex2-1]).css("border", "solid #ed572d 3px");
 
 }
 
 function activeThumbnail3(n) {
     var i;
     var allThumbnails = document.getElementsByClassName("thumbnail3");
-    if (n > allThumbnails.length) {thumbnailIndex = 1}
-    if (n < 1) {thumbnailIndex = allThumbnails.length}
+    if (n > allThumbnails.length) {thumbnailIndex3 = 1}
+    if (n < 1) {thumbnailIndex3 = allThumbnails.length}
     for (i = 0; i < allThumbnails.length; i++) {
         $(allThumbnails[i]).css("border", "none");
     }
 
-    $(allThumbnails[thumbnailIndex-1]).css("border", "solid #ed572d 3px");
+    $(allThumbnails[thumbnailIndex3-1]).css("border", "solid #ed572d 3px");
 
 }
 
@@ -120,6 +126,22 @@ function onLoad() {
     });
 
     $(".thumbnail").mouseleave(function () {
+        $(this).removeClass("mouse");
+    });
+
+    $(".thumbnail2").mouseover(function () {
+        $(this).addClass("mouse");
+    });
+
+    $(".thumbnail2").mouseleave(function () {
+        $(this).removeClass("mouse");
+    });
+
+    $(".thumbnail3").mouseover(function () {
+        $(this).addClass("mouse");
+    });
+
+    $(".thumbnail3").mouseleave(function () {
         $(this).removeClass("mouse");
     });
 
