@@ -36,6 +36,10 @@ header, #wrapper, footer, #wrapper2, #indexWrapper {
     height: 100px;
 }
 
+.events_header {
+    margin-top: 20px;
+}
+
 footer {
     background-color: #f05b87;
     height: 150px;
