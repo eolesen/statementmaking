@@ -141,7 +141,7 @@ h1 a {
 
 
 .thumbnail, .thumbnail2, .thumbnail3 {
-    width: 15%;
+    width: 8%;
     padding: 1%;
     box-sizing: border-box;}
 
@@ -200,8 +200,8 @@ h1 a {
 }
 
 .mouse {
-    height: 20%;
-    width: 20%;
+    height: 15%;
+    width: 15%;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     /*-ms-transition: all 1s ease;*/
