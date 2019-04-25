@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script type="text/javascript" src="../javascript/galleryVue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body onload="onLoad()">
+<header>
+    <div id="indexdiv">
+        <!--Made header a link to the home page-->
+        <h1><img src="../resources/SM_Logo_Shadow.png" alt="logo">
+            <a href="index.html">Statement making</a></h1>
+        <!--image of the sign in the top right corner-->
+    </div>
+    <!--Navigtion bar code below-->
+    <div id="nav">
+        <ul>
+            <!--current active page-->
+            <li><a href="index.html">Home</a></li>
+            <li><a id="about" href="About.html">About Us</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li id="statement"><a href="statement.html">Make Your Statement</a></li>
+        </ul>
+    </div>
+</header>
+
+<div id="wrapper">
+    <p>A collection of pictures from the previous Statement Making fashion shows</p>
+
+    <div id="content">
+        <div id="app">
+            <product :product="product" :premium="premium" :details="details"></product>
+            <product :product="product" :premium="premium" :details="details"></product>
+            <product :product="product" :premium="premium" :details="details"></product>
+        </div>
+    </div>
+
+
+
+</div>
+<footer>
+    <div id = "footer">
+        <p>This page is designed for Statement Making by Hailey Brown, Maria Handschu, and Elizabeth Olesen <br>
+            &copy; 2019</p>
+    </div>
+</footer>
+</body>
+
+</html>
+
+
