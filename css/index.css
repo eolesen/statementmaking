@@ -36,6 +36,10 @@ header, #wrapper, footer, #wrapper2, #indexWrapper {
     height: 100px;
 }
 
+.events_header {
+    margin-top: 20px;
+}
+
 footer {
     background-color: #f05b87;
     height: 150px;
@@ -221,7 +225,7 @@ h1 a {
 
 .statement_paragraph {
     position: relative;
-    font-family: "../resources/SM_Fonts/Nexa_Bold.otf";
+    font-family: "../resources/SM Fonts/Nexa Bold.otf";
 }
 
 .statement_paragraph, p {
@@ -264,4 +268,81 @@ h1 a {
     float: left;
     width:35%;
     height: 50%;
+}
+
+/*  Amazon Lex CSS    */
+input#wisdom {
+    padding: 4px;
+    font-size: 1em;
+    width: 400px
+}
+
+input::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+p.userRequest {
+    margin: 4px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+    min-width: 50%;
+    max-width: 85%;
+    float: left;
+    background-color: #7d7;
+}
+
+p.lexResponse {
+    margin: 4px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+    text-align: right;
+    min-width: 50%;
+    max-width: 85%;
+    float: right;
+    background-color: #bbf;
+    font-style: italic;
+}
+
+p.lexError {
+    margin: 4px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+    text-align: right;
+    min-width: 50%;
+    max-width: 85%;
+    float: right;
+    background-color: #f77;
+}
+
+/* Events CSS */
+.feb_events_events {
+    text-align: center;
+}
+
+.feb_events img {
+    align-items: center;
+    width: 30%;
+
+}
+
+
+.march_events {
+    text-align: center;
+}
+
+.march_events img {
+    align-items: center;
+    width: 30%;
+
+}
+
+.april_events {
+    text-align: center;
+}
+
+.april_events img {
+    align-items: center;
+    width: 30%;
+
 }
