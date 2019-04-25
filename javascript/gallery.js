@@ -50,27 +50,27 @@ function showSlides(n) {
 function showSlides2(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides2");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {slideIndex2 = 1}
+    if (n < 1) {slideIndex2 = slides.length}
     for (i = 0; i < slides.length; i++) {
         $(slides[i]).css("display", "none");
     }
 
-    $(slides[slideIndex-1]).css("display", "block");
-    console.log(slideIndex);
+    $(slides[slideIndex2-1]).css("display", "block");
+    console.log(slideIndex2);
 }
 
 function showSlides3(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides3");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {slideIndex3 = 1}
+    if (n < 1) {slideIndex3 = slides.length}
     for (i = 0; i < slides.length; i++) {
         $(slides[i]).css("display", "none");
     }
 
-    $(slides[slideIndex-1]).css("display", "block");
-    console.log(slideIndex);
+    $(slides[slideIndex3-1]).css("display", "block");
+    console.log(slideIndex3);
 }
 
 
