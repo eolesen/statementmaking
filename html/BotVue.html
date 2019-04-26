@@ -1,0 +1,80 @@
+<template>
+    <b-container fluid>
+
+
+        <!-- Navigation bar -->
+        <nav>
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" id="about" href="About.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li id="statement"><a href="statement.html">Make Your Statement</a></li>
+            </ul>
+        </nav>
+
+        <div id= 'centerContainer'>
+
+            <div id="centerContent">
+                <h1>Statement Bot</h1>
+                <div id="lexBot">
+                    <b-row>
+
+                        <b-col md="3" id="botTitle">
+                            <div class="audio-control1">
+                                <h1 hidden>Statement Bot</h1>
+
+                                <div>
+                                    <input type="text" id="BOT" name="BOT" placeholder="BOT" value="MakeAStatement" hidden/>
+                                </div>
+
+                            </div>
+                        </b-col>
+                    </b-row>
+                    <b-row>
+
+                        <b-col md="3">
+                            <div class="audio-control2">
+                                <span>Status:</span><span id="message">
+
+                            </span>
+
+
+
+                            </div>
+                        </b-col>
+                    </b-row>
+                    <b-row>
+
+                        <b-col md="3">
+                            <canvas class="visualizer"></canvas>
+
+                        </b-col>
+                    </b-row>
+
+                    <b-row>
+                        <b-col md="3">
+                            <div class="audio-control3">
+
+                                <!--<h1>Speak</h1>-->
+                                <img id="audio-control" class="white-circle"src="../assets/microphone.png">
+
+                            </div>
+                        </b-col>
+
+
+                    </b-row>
+
+
+
+                </div>
+                <canvas class="visualizer"></canvas>
+
+            </div>
+        </div>
+
+    </b-container>
+
+
+
+</template>
