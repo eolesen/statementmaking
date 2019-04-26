@@ -54,8 +54,8 @@
         <div class="april_events">
             <img :src="image5" alt="april poster">
         </div>
-        <h4>Tickets to the Show Here!</h4>
         <div class="cart">
+            <h4>Purchase tickets to the show here!</h4>
             <button @click="addToCart()" class="statement_button">Add to cart</button>
             <span>Cart ({{ cart }})</span>
             <button @click="emptyCart()" class="statement_button">Empty Cart</button>
@@ -95,9 +95,8 @@
             checkOut() {
                 window.location.href = "statement.html"
             }
-            }
-        })
-
+        }
+    })
 
 </script>
 

@@ -5,7 +5,7 @@ function setup() {
     let sketchCanvas = createCanvas(width,450);
     // console.log(sketchCanvas);
     sketchCanvas.parent("canvas");
-    // frameRate(10000);
+    frameRate(10);
 
     let button = document.getElementById('clear-btn')
     button.addEventListener('click', function(e) {
