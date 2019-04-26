@@ -31,9 +31,20 @@ header, #wrapper, footer, #wrapper2, #indexWrapper {
 }
 
 #wrapper2{
-    position: relative;
+    /*position: relative;*/
     background-color: #FDECF3;
     text-align: center;
+}
+
+.canvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#canvas {
+    border: 2px solid #ed572d;
 }
 
 #logopiece{
@@ -376,3 +387,4 @@ p.lexError {
     border-radius: 8px;
     box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
