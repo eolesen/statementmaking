@@ -54,11 +54,12 @@
         <div class="april_events">
             <img :src="image5" alt="april poster">
         </div>
-        <span>Tickets for sale: $1000</span>
+        <h4>Tickets to the Show Here!</h4>
         <div class="cart">
             <button @click="addToCart()" class="statement_button">Add to cart</button>
             <span>Cart ({{ cart }})</span>
             <button @click="emptyCart()" class="statement_button">Empty Cart</button>
+            <button @click="checkOut()" class="statement_button">Checkout</button>
         </div>
 
     </div>
@@ -90,9 +91,13 @@
             },
             emptyCart() {
                 this.cart = 0
+            },
+            checkOut() {
+                window.location.href = "statement.html"
             }
-        }
-    })
+            }
+        })
+
 
 </script>
 
