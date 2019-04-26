@@ -6,6 +6,7 @@ function setup() {
     // console.log(sketchCanvas);
     sketchCanvas.parent("wrapper2");
     frameRate(10);
+
 }
 
 function draw() {
@@ -40,6 +41,10 @@ function randomTriangle() {
             triangle(mouseX - 20, mouseY - 50, mouseX + 50, mouseY - 50, mouseX + 20, mouseY + 50)
             break;
 
+    }
+
+    function clearPage() {
+        clear()
     }
 
 }

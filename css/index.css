@@ -344,5 +344,15 @@ p.lexError {
 .april_events img {
     align-items: center;
     width: 30%;
+}
 
+#button {
+    float: left;
+    margin-left: 20px;
+    height: 40px;
+    width: 80px;
+    border-color: #55c1ef;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
