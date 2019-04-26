@@ -7,7 +7,8 @@
     <meta charset="utf-8">
     <title>Statement Making</title>
     <link rel="stylesheet" type="text/css" href="../css/index.css">
-    <script src="../javascript/EventsVue.js"></script>
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.min.js"></script>
+    <!--    <script src="../javascript/EventsVue.js"></script>-->
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 </head>
 
@@ -15,8 +16,8 @@
 <header>
     <div id="indexdiv">
         <!--Made header a link to the home page-->
-        <h1><img src="../resources/SM_Logo_Shadow.png" alt="logo">
-            <a href="index.html">Statement making</a></h1>
+        <img src="../resources/SM_Logo_Shadow.png" alt="logo" width="100" height="100">
+        <h1 id="brand-title"><a href="index.html">Statement Making</a></h1>
         <!--image of the sign in the top right corner-->
     </div>
     <!--Navigtion bar code below-->
@@ -34,28 +35,32 @@
 
 
 <div id="wrapper">
+    <div id="app">
 
-    <h3>February Events</h3>
-    <div class="feb_events">
-        <img src ="../resources/events/meeting_feb.png" alt="february poster">
+        <h3>February Events</h3>
+        <div class="events">
+            <div class="feb_events">
+                <img id="image1" :src="image1" alt="february poster">
+            </div>
+        </div>
+        <h3 class="events_header">March Events</h3>
+        <div class="march_events">
+            <img :src="image2" alt="blue poster">
+            <img :src="image3" alt="orange poster">
+            <img :src="image4" alt="pink poster">
+        </div>
+
+        <h3 class="events_header">April Events</h3>
+        <div class="april_events">
+            <img :src="image5" alt="april poster">
+        </div>
+        <div class="cart">
+            <button @click="addToCart()" class="statement_button">Add to cart</button>
+            <span>Cart ({{ cart }})</span>
+            <button @click="emptyCart()" class="statement_button">Empty Cart</button>
+        </div>
+
     </div>
-
-<!--    <div class="product-image">-->
-<!--        <img :src="image" />-->
-<!--    </div>-->
-
-    <h3 class="events_header">March Events</h3>
-    <div class="march_events">
-        <img src ="../resources/events/Poster_Blue_feb.jpg" alt="blue poster">
-        <img src ="../resources/events/Poster_Orange_march.jpg" alt="orange poster">
-        <img src ="../resources/events/Poster_Pink_march.jpg" alt="pink poster">
-    </div>
-
-    <h3 class="events_header">April Events</h3>
-    <div class="april_events">
-        <img src ="../resources/events/show_april.png" alt="april poster">
-    </div>
-
 </div>
 <footer>
     <div id="footer">
@@ -65,6 +70,30 @@
         <br>
     </div>
 </footer>
+
+<script>
+
+    const app = new Vue({
+        el: '#app',
+        data: {
+            image1: "../resources/events/meeting_feb.png",
+            image2: "../resources/events/Poster_Blue_feb.jpg",
+            image3: "../resources/events/Poster_Orange_march.jpg",
+            image4: "../resources/events/Poster_Pink_march.jpg",
+            image5: "../resources/events/show_april.png",
+            cart: 0
+        },
+        methods: {
+            addToCart() {
+                this.cart += 1
+            },
+            emptyCart() {
+                this.cart = 0
+            }
+        }
+    })
+
+</script>
 
 </body>
 </html>

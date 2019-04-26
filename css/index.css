@@ -26,6 +26,10 @@ header, #wrapper, footer, #wrapper2, #indexWrapper {
     text-align: center;
 }
 
+#brand-title a {
+    color: white;
+}
+
 #wrapper2{
     position: relative;
     background-color: #FDECF3;
@@ -87,6 +91,8 @@ h1 img{
 
 #indexdiv{
     height: 125px;
+    display:flex;
+    align-items: center;
 }
 
 h1 a {
@@ -318,12 +324,26 @@ p.lexError {
 /* Events CSS */
 .feb_events_events {
     text-align: center;
+    display: flex;
+}
+
+#image1 {
+    margin-top: 10px;
+}
+
+.statement_button {
+    padding: 5px;
+    background-color: #55c1ef;
+    border-color: #55c1ef;
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
 }
 
 .feb_events img {
     align-items: center;
     width: 30%;
-
 }
 
 
